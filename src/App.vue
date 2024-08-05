@@ -10,7 +10,11 @@
         <div style="margin-top: 20px;">
           <DialogBoxRightLeft/>
         </div>
-      </div>
+
+        <div style="margin-top: 20px;">
+            <dialogBoxAudio/>
+          </div>
+        </div>
       
        <div style="margin-left: 900px;;">
         <MapComponent/>
@@ -25,13 +29,15 @@
 import MapComponent from './components/map.vue';
 import DialogBoxRight from './components/dialogBoxRight.vue';
 import DialogBoxRightLeft from './components/dialogBoxLeft.vue';
+import dialogBoxAudio from './components/dialogBoxAudio.vue';
 
 export default {
   name: 'App',
   components: {
     MapComponent,
     DialogBoxRightLeft,
-    DialogBoxRight
+    DialogBoxRight,
+    dialogBoxAudio
     
   }
 };
