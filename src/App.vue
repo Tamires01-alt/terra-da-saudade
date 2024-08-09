@@ -6,7 +6,6 @@
           <DialogBoxRight
               message="jkdkkkkkkkkkkkkkkkkkkkkkkhdjsdadd ddasdkkkkkkkkkkkkk"
           />
-       
         </div>
 
         <div style="margin-top: 20px;">
@@ -22,10 +21,14 @@
             <dialogBoxAudio   :audioSrc="audioFile02" :imageProfile="imageProfile"/>
           </div>
         </div>
+
+        <div>
+          <dialogBoxImage  :imageContent="imageContent"/>
+        </div>
       
-       <div style="margin-left: 900px;;">
+       <!-- <div style="margin-left: 900px;;">
         <MapComponent/>
-       </div>
+       </div> -->
        
     </div>
   </div>
@@ -33,34 +36,45 @@
 
 <script>
 
-import MapComponent from './components/map.vue';
+// import MapComponent from './components/map.vue';
 import DialogBoxRight from './components/dialogBoxRight.vue';
 import DialogBoxRightLeft from './components/dialogBoxLeft.vue';
 import dialogBoxAudio from './components/dialogBoxAudio.vue';
+import dialogBoxImage from './components/dialogBoxImage.vue';
 
 export default {
   name: 'App',
   components: {
-    MapComponent,
+    // MapComponent,
     DialogBoxRightLeft,
     DialogBoxRight,
-    dialogBoxAudio
+    dialogBoxAudio,
+    dialogBoxImage 
     
   },
   data() {
     return {
       audioFile01: require('@/assets/audio/benca.mp3'),
       audioFile02: require('@/assets/audio/audi01.mp3'),
-      imageProfile: require('@/assets/image/perfilPersonagem02.jpeg')
+      imageProfile: require('@/assets/image/perfilPersonagem02.jpeg'),
+      imageContent: require('@/assets/image/perfilPersonagem02.jpeg')
     };
   }
 };
 </script>
 
 <style scoped>
+
+
+
 .app-background {
-  background-image: url(assets/image/backgroundDark.jpeg);
-  min-height: 100vh;
-  margin: 0;
+  background-image: url('assets/image/backgroundDark.jpeg');
+ 
+  min-height: 100px; 
 }
+
+
+
+
+
 </style>
