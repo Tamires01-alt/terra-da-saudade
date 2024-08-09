@@ -16,10 +16,10 @@
         </div>
 
         <div style="margin-top: 20px;">
-            <dialogBoxAudio   :audioSrc="audioFile01" />
+            <dialogBoxAudio   :audioSrc="audioFile01"  :imageProfile="imageProfile"/>
           </div>
           <div style="margin-top: 20px;">
-            <dialogBoxAudio   :audioSrc="audioFile02" />
+            <dialogBoxAudio   :audioSrc="audioFile02" :imageProfile="imageProfile"/>
           </div>
         </div>
       
@@ -50,7 +50,8 @@ export default {
   data() {
     return {
       audioFile01: require('@/assets/audio/benca.mp3'),
-      audioFile02: require('@/assets/audio/audi01.mp3')
+      audioFile02: require('@/assets/audio/audi01.mp3'),
+      imageProfile: require('@/assets/image/perfilPersonagem02.jpeg')
     };
   }
 };
