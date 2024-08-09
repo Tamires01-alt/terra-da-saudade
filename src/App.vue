@@ -3,16 +3,23 @@
     <div class="q-pa-md">
       <div>
         <div>
-          <DialogBoxRight/>
+          <DialogBoxRight
+              message="jkdkkkkkkkkkkkkkkkkkkkkkkhdjsdadd ddasdkkkkkkkkkkkkk"
+          />
        
         </div>
 
         <div style="margin-top: 20px;">
-          <DialogBoxRightLeft/>
+          <DialogBoxRightLeft 
+             message="jkdkkkkkkkkkkkkkkkkkkkkkkhdjsdadd ddasdkkkkkkkkkkkkk"
+          />
         </div>
 
         <div style="margin-top: 20px;">
-            <dialogBoxAudio/>
+            <dialogBoxAudio   :audioSrc="audioFile01" />
+          </div>
+          <div style="margin-top: 20px;">
+            <dialogBoxAudio   :audioSrc="audioFile02" />
           </div>
         </div>
       
@@ -39,6 +46,12 @@ export default {
     DialogBoxRight,
     dialogBoxAudio
     
+  },
+  data() {
+    return {
+      audioFile01: require('@/assets/audio/benca.mp3'),
+      audioFile02: require('@/assets/audio/audi01.mp3')
+    };
   }
 };
 </script>
