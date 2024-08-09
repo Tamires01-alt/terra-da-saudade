@@ -1,6 +1,6 @@
 <template>
   <div style="display: flex">
-    <div class="boxStyleComponent">
+    <div class="boxStyleComponent4">
       <div style="display: flex">
         <img
           :src="iconPlay"
@@ -111,9 +111,9 @@ export default {
 };
 </script>
 <style>
-.boxStyleComponent {
-  width: 50%;
-  height: 256px;
+.boxStyleComponent4 {
+  width: 550px;
+  min-height: 56px;
   padding: 30px 15px;
   border-radius: 20px 0px 20px 20px;
   background-color: #d9fdd3;

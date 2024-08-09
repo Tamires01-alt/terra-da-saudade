@@ -1,7 +1,7 @@
 <template>
     <div style="display: flex;">
         <div class="pointerUserLeft"></div>
-        <div id="boxStyleComponentLeft">
+        <div id="boxStyleComponentLeft3">
             <div>
                 <img class="imageContent" :src="this.imageContent"/>
             </div>
@@ -27,9 +27,9 @@ export default {
 };
 </script>
 <style>
-#boxStyleComponentLeft{
-    width: 50%;
-    height: 256px;
+#boxStyleComponentLeft3{
+    width: 550px;
+    min-height: 56px;
     padding: 30px 15px;
     border-radius: 0px 20px 20px 20px ;
     background-color: #f4f4f4;
@@ -45,7 +45,6 @@ export default {
 }
 
 .imageContent{
-    background-color: #bd1313;
     width: 252px;
     height: 204px; 
 }

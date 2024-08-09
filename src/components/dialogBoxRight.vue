@@ -1,6 +1,6 @@
 <template>
   <div style="display: flex">
-    <div class="boxStyleComponent">{{ displayedMessage }}</div>
+    <div class="boxStyleComponent1">{{ displayedMessage }}</div>
     <div class="ponteiroUser"></div>
   </div>
 </template>
@@ -34,9 +34,9 @@ export default {
 };
 </script>
 <style>
-.boxStyleComponent {
-  width: 50%;
-  height: 256px;
+.boxStyleComponent1 {
+  width: 550px;
+  min-height: 56px;
   padding: 30px 15px;
   border-radius: 20px 0px 20px 20px;
   background-color: #d9fdd3;
