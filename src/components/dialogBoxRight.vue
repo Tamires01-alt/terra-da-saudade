@@ -38,10 +38,24 @@ export default {
   width: 550px;
   min-height: 56px;
   padding: 30px 15px;
+  font-size: 18px;
   border-radius: 20px 0px 20px 20px;
   background-color: #d9fdd3;
   text-align: center;
   color: #111b21;
+}
+
+@media only screen and (max-width: 600px) {
+  .boxStyleComponent1 {
+    width: 380px;
+    min-height: 56px;
+    padding: 30px 15px;
+    font-size: 18px;
+    border-radius: 20px 0px 20px 20px;
+    background-color: #d9fdd3;
+    text-align: center;
+    color: #111b21;
+  }
 }
 
 .ponteiroUser {

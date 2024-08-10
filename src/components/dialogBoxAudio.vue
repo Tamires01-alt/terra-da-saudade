@@ -22,9 +22,8 @@
           @input="updateTime"
         />
         <div style="padding: 5px 0px 0px 10px">
-          <img  class="profileImg" :src="this.imageProfile"/>
+          <img class="profileImg" :src="this.imageProfile" />
         </div>
-        
       </div>
     </div>
     <div class="ponteiroUser"></div>
@@ -119,21 +118,34 @@ export default {
   background-color: #d9fdd3;
   text-align: center;
   color: #111b21;
+  border: none;
 }
 
+@media only screen and (max-width: 600px) {
+  .boxStyleComponent4 {
+    width: 380px;
+    min-height: 56px;
+    padding: 30px 15px;
+    border-radius: 20px 0px 20px 20px;
+    background-color: #d9fdd3;
+    text-align: center;
+    color: #111b21;
+    border: none;
+  }
+}
 .ponteiroUser {
   background-color: #d9fdd3;
   border-radius: 0px 0px 400px 0px;
   width: 12px;
   height: 14px;
+  border: none;
 }
-
 
 .profileImg {
   background-color: #111b21;
   width: 50px;
   height: 50px;
   border-radius: 50px;
-  
+  border: none;
 }
 </style>
