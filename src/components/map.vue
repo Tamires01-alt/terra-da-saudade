@@ -1,5 +1,5 @@
 <template>
-  <div style="display: flex">
+  <div style="display: flex"  class="positionBox">
     <div class="boxStyleComponent7">
       <div id="map"></div>
     </div>

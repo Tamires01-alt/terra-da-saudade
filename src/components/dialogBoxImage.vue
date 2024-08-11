@@ -1,11 +1,12 @@
 <template>
-  <div style="display: flex">
-    <div class="pointerUserLeft"></div>
+  <div style="display: flex"  class="positionBox">
+    
     <div id="boxStyleComponentLeft3">
       <div>
         <img class="imageContent" :src="this.imageContent" />
       </div>
     </div>
+    <div class="ponteiroUser"></div>
   </div>
 </template>
 <script>
@@ -27,33 +28,46 @@ export default {
   width: 550px;
   min-height: 56px;
   padding: 30px 15px;
-  border-radius: 0px 20px 20px 20px;
-  background-color: #f4f4f4;
+  font-size: 18px;
+  border-radius: 20px 0px 20px 20px;
+  background-color: #d9fdd3;
   text-align: center;
-  color: #0b141a;
+  color: #111b21;
 }
 
 @media only screen and (max-width: 600px) {
-  #boxStyleComponentLeft3 {
+  #boxStyleComponentLeft3{
     width: 380px;
     min-height: 56px;
     padding: 30px 15px;
-    border-radius: 0px 20px 20px 20px;
-    background-color: #f4f4f4;
+    font-size: 18px;
+    border-radius: 20px 0px 20px 20px;
+    background-color: #d9fdd3;
     text-align: center;
-    color: #0b141a;
+    color: #111b21;
   }
 }
 
-.pointerUserLeft {
-  background-color: #f4f4f4;
-  border-radius: 0px 0px 0px 400px;
+.ponteiroUser {
+  background-color: #d9fdd3;
+  border-radius: 0px 0px 400px 0px;
   width: 12px;
   height: 14px;
 }
 
+
 .imageContent {
-  width: 252px;
-  height: 204px;
+  max-width: 352px;
+  max-height: 244px;
+}
+
+.positionBox {
+   padding: 0px 0px 0px 190px ;
+}
+
+@media only screen and (max-width: 600px) {
+  .positionBox {
+    padding: 0px 0px 0px 0px;
+  }
 }
 </style>

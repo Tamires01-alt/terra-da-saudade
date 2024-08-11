@@ -1,5 +1,5 @@
 <template>
-  <div style="display: flex">
+  <div style="display: flex" class="positionBox">
     <div class="boxStyleComponent4">
       <div style="display: flex">
         <img
@@ -141,11 +141,21 @@ export default {
   border: none;
 }
 
+@media only screen and (max-width: 600px) {
+  .positionBox {
+    padding: 0px 0px 0px 190px;
+  }
+}
+
 .profileImg {
   background-color: #111b21;
   width: 50px;
   height: 50px;
   border-radius: 50px;
   border: none;
+}
+
+.positionBox {
+  padding: 0px 0px 0px 0px;
 }
 </style>

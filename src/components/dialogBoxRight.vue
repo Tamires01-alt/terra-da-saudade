@@ -1,5 +1,5 @@
 <template>
-  <div style="display: flex">
+  <div style="display: flex"  class="positionBox">
     <div class="boxStyleComponent1">{{ displayedMessage }}</div>
     <div class="ponteiroUser"></div>
   </div>
@@ -63,5 +63,15 @@ export default {
   border-radius: 0px 0px 400px 0px;
   width: 12px;
   height: 14px;
+}
+
+.positionBox {
+   padding: 0px 0px 0px 190px ;
+}
+
+@media only screen and (max-width: 600px) {
+  .positionBox {
+    padding: 0px 0px 0px 0px;
+  }
 }
 </style>

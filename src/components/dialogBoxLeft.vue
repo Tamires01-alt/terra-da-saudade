@@ -1,5 +1,5 @@
 <template>
-  <div style="display: flex">
+  <div style="display: flex"   >
     <div class="pointerUserLeft"></div>
     <div id="boxStyleComponentLeft2">{{ displayedMessage }}</div>
   </div>
@@ -40,6 +40,7 @@ export default {
   padding: 30px 15px;
   border-radius: 0px 20px 20px 20px;
   background-color: #f4f4f4;
+  font-size: 18px;
   text-align: center;
   color: #0b141a;
 }
@@ -62,4 +63,6 @@ export default {
   width: 12px;
   height: 14px;
 }
+
+
 </style>
